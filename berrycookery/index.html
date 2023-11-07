@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Berry Cookery</title>
+    <link rel="stylesheet" href="style/index_style.css" />
+    <link rel="icon" href="grafika/icon_half.svg" />
+  </head>
+  <body>
+    <header>
+      <img src="grafika/bitmapa.svg" alt="logo" id="berry" />
+      <button onclick="rozwin()">
+        <img src="grafika/menu_icon.svg" alt="ikona menu" id="menu_icon" /><a
+          href="index.html"
+        ></a>
+      </button>
+      <ul id="lista">
+        <h3 class="menu">Menu</h3>
+        <br />
+        <li class="menu">
+          <a href="strony/rejestracja.html" class="menu">Rejestracja</a>
+        </li>
+        <li class="menu">
+          <a href="strony/logowanie.html" class="menu">Logowanie</a>
+        </li>
+      </ul>
+    </header>
+    <main>
+      <section id="section1">
+        <section class="opis">
+          <h2>DLACZEGO POWSTALIŚMY?</h2>
+          <p>
+            Nasza strona internetowa powstała w ramach konkursu HACK HEROES.
+            Naszym celem było stworzenie prostej w obsłudze strony internetowej,
+            która ułatwi codzienne życie wielu osób.
+          </p>
+        </section>
+      </section>
+
+      <section id="section2">
+        <a href="strony/logowanie.html"><p>ZALOGUJ</p></a>
+        <a href="strony/rejestracja.html"><p>ZAREJESTRUJ</p></a>
+      </section>
+    </main>
+    <footer>
+      <table>
+        <tr>
+          <td>
+            <p class="autorzy">
+              <a href="https://github.com/Kofenergy" target="_blank"
+                >Oliwia Smalcuga</a
+              >
+              &
+              <a href="https://github.com/M4rth3" target="_blank"
+                >Martyna Ślizankiewicz</a
+              >
+            </p>
+          </td>
+          <td><p id="zegar"></p></td>
+          <td>
+            <p class="pomoc"><a href="strony/pomoc.php">Pomoc</a></p>
+          </td>
+        </tr>
+      </table>
+      <script src="skrypty/zegar.js"></script>
+      <script src="skrypty/menu.js"></script>
+    </footer>
+  </body>
+</html>

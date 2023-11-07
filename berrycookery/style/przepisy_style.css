@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Lobster&display=swap");
+
+@keyframes rozwijanie {
+  from {
+    height: 0;
+    color: rgba(255, 255, 255, 0);
+  }
+  to {
+    height: 80.1%;
+    color: rgba(255, 255, 255, 1);
+  }
+}
+@keyframes zwijanie {
+  from {
+    height: 80.1%;
+    color: rgba(255, 255, 255, 1);
+  }
+  to {
+    height: 0;
+    color: rgba(255, 255, 255, 0);
+  }
+}
+
+@keyframes rozwijanie_tekst {
+  from {
+    color: rgba(255, 255, 255, 0);
+  }
+  to {
+    color: rgba(255, 255, 255, 1);
+  }
+}
+@keyframes zwijanie_tekst {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+* {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+/*height & width*/
+
+html,
+body {
+  height: 100%;
+}
+header {
+  height: 15%;
+  width: 100%;
+}
+main {
+  height: 80%;
+}
+#section1 {
+  height: 60%;
+}
+.opis {
+  height: 90%;
+  width: 80%;
+  background-color: white;
+}
+#section2 {
+  height: 40%;
+}
+footer {
+  height: 4%;
+}
+a {
+  margin-top: 4px;
+  height: 100%;
+}
+#lista {
+  position: absolute;
+  right: 0;
+  top: 15%;
+  width: 7%;
+  /*height: 80.1%;*/
+  height: 0;
+  opacity: 0.9;
+  background-color: #547455;
+  color: rgba(255, 255, 255, 0);
+  animation-name: rozwijanie;
+  animation-duration: 1.5s;
+  animation-play-state: paused;
+  animation-fill-mode: forwards;
+}
+#lista a,
+#lista li {
+  list-style-type: none;
+  margin-left: -5%;
+}
+#lista h3 {
+  font-family: "Lobster";
+  font-size: 200%;
+}
+#lista a {
+  color: inherit;
+  text-decoration: inherit;
+}
+/*
+ul a, ul li, ul h3{
+    animation-name: rozwijanie_tekst;
+    animation-duration: 1s;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}*/
+
+/*ułożenie*/
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+#section1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#section2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*reszta*/
+
+header {
+  border: none;
+  border-bottom: 0.5px lightslategray solid;
+}
+h1 {
+  font-family: "Lobster", sans-serif;
+  font-size: 500%;
+}
+#menu_icon {
+  position: absolute;
+  right: 2%;
+  top: 2.5%;
+}
+img{
+  margin-top: 2px;
+  height: 90%;
+}
+#menu_icon {
+  height: 10%;
+}
+main {
+  background-image: url(../grafika/strawberries2.jpg);
+  background-size: cover;
+}
+.opis {
+  border-radius: 40px;
+}
+.opis p,
+h2 {
+  margin: 50px;
+  font-size: 150%;
+  text-align: center;
+}
+main a,
+footer a {
+  color: black;
+  text-decoration: none;
+}
+main #section2 a {
+  font-size: 150%;
+  background-color: white;
+  height: 40%;
+  width: 300px;
+  margin: 0 100px;
+  border: 1px white solid;
+  border-radius: 50px;
+  border: 0.5px lightslategray solid;
+  color: black;
+  text-decoration: none;
+}
+main #section2 a:hover {
+  background-color: crimson;
+  border: none;
+  transition: 0.5s;
+  color: white;
+  padding: 1%;
+}
+a p {
+  margin: 50px;
+  text-align: center;
+}
+footer {
+  border-top: 0.5px lightslategray solid;
+}
+.autorzy {
+  margin-left: 20px;
+}
+.pomoc {
+  margin-right: 20px;
+}
+table,
+tr {
+  width: 100%;
+  height: 100%;
+}
+footer table tr td {
+  text-align: center;
+  width: 33.3%;
+  height: 100%;
+}
+div {
+  border: 1px solid black;
+}
+button {
+  all: unset;
+  cursor: pointer;
+}
+.kuleczki {
+  background-image: url(../grafika/bitmapa.png);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
+  margin: 10px;
+  width: 400px;
+  font-size: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  height: 300px;
+  margin-top: 40px;
+}
+
+.grupa_kuleczek {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  
+}
+#all_przepisy {
+  height: 100%;
+  width: 200px;
+  background-color: white;
+  float: left;
+}
+aside{
+  overflow: auto;
+  border-bottom: 0.5px lightslategray solid;
+}
+.przepisy_aside:hover fieldset{
+  background-color: crimson;
+  color: white;
+}
+.calosc {
+  overflow: auto;
+  height: 100%;
+}
+#menu_icon{
+  height: 10%;
+  position: absolute;
+  right: 2%;
+  top: 2.5%;
+}
+img{
+  margin-top: 2px;
+  height: 90%;
+}

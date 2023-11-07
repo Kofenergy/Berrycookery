@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jakas nasza nazwa</title>
+    <link rel="stylesheet" href="../style/logowania_rejestracja_nowe.css" />
+    <link rel="icon" href="../grafika/icon_half.svg">
+    <!--TU BEDZIE IKONA NIE WYSZLO MI XD-->
+  </head>
+  <body>
+    <header>
+      <a href="../index.html"><img src="../grafika/bitmapa.svg" alt="logo" id="berry"></img></a>
+      <button onclick="rozwin()"><img src="../grafika/menu_icon.svg" alt="ikona menu" id="menu_icon"></button>
+          
+          <ul id="lista">
+            <h3 class="menu">Menu</h3><br>
+            <li class="menu"><a href="rejstracja.html" class="menu">Rejestracja</a></li>
+          </ul>
+
+    </header>
+    <main>
+      
+      <section id="section1">
+        <h2>ZALOGUJ SIĘ</h2>
+        <form action="../skrypty/logowanie.php" method="post">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required/><br /><br />
+          <label for="haslo">Hasło</label>
+          <input type="password" name="haslo" id="haslo" required/><br /><br />
+          <input type="submit" value="ZALOGUJ" id="logowanie">
+        </form>
+      </section>
+    </main>
+    <footer>
+      <table>
+        <tr>
+          <td><p class="autorzy"><a href="">Oliwia Smalcuga</a> & <a href="https://github.com/M4rth3" target="_blank">Martyna Ślizankiewicz</a></p></td>
+          <td><p id="zegar"></p></td>
+          <td><p class="pomoc"><a href="pomoc.php">Pomoc</a></p></td>
+        </tr>
+      </table>
+      
+      <script src="../skrypty/zegar.js"></script>
+      <script src="../skrypty/menu.js"></script>
+    </footer>
+  </body>
+</html>

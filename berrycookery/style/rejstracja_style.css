@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+}
+
+/*
+
+html,
+body {
+  height: 100%;
+}
+header {
+  height: 15%;
+  width: 100%;
+}
+#menu_icon {
+  height: 10%;
+}
+main {
+  height: 80%;
+}
+#section1 {
+  height: 60%;
+}
+.opis {
+  height: 90%;
+  width: 80%;
+  background-color: white;
+}
+#section2 {
+  height: 40%;
+}
+footer {
+  height: 5%;
+}
+
+/*ułożenie
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+#section1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#section2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*reszta
+
+h1 {
+}
+img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: 1px black solid;
+}
+main {
+  background-image: url(../grafika/strawberries2.jpg);
+  background-size: cover;
+}
+.opis {
+  border-radius: 40px;
+}
+.opis p,
+h2 {
+  margin: 50px;
+  text-align: center;
+}
+a {
+  background-color: aliceblue;
+  height: 40%;
+  width: 300px;
+  margin: 0 100px;
+  border: 1px white solid;
+  border-radius: 50px;
+  border: 0.5px lightslategray solid;
+}
+a p {
+  margin: 50px;
+  text-align: center;
+}
+.autorzy {
+  margin-left: 20px;
+}
+.pomoc {
+  margin-right: 20px;
+}
+*/

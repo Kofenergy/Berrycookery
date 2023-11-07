@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jakas nasza nazwa</title>
+    <link rel="stylesheet" href="../style/logowania_rejestracja_nowe.css" />
+    <link rel="icon" href="../grafika/icon_half.svg">
+    
+  </head>
+  <body>
+    <header>
+      <a href="../index.html"><img src="../grafika/bitmapa.svg" alt="logo" id="berry"></img></a>
+      <button onclick="rozwin()"><img src="../grafika/menu_icon.svg" alt="ikona menu" id="menu_icon"></button>
+          
+          <ul id="lista">
+            <h3 class="menu">Menu</h3><br>
+            <li class="menu"><a href="rejstracja.html" class="menu">Rejestracja</a></li>
+          </ul>
+
+    </header>
+    <main>
+      
+      <section id="section1">
+        <h2>ZAREJESTRUJ SIĘ</h2>
+        <form action="../skrypty/rejstracja.php" method="post">
+          <form action="rejstracja.php" method="post">
+            <label for="imie">Imię</label>
+            <input type="text" name="imie" id="imie" 
+            minlength="3" maxlength="30" required/><br /><br />
+            <label for="nick">Nick</label>
+            <input type="text" name="nick" id="nick" 
+            minlength="3" maxlength="30" required/><br /><br />
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email"  required/><br /><br />
+            <label for="haslo">Haslo</label>
+            <input type="password" name="haslo" id="haslo" minlength="5" required/><br /><br />
+            <label for="haslo2">Powtórz haslo</label>
+            <input type="password" name="haslo2" id="haslo2" required/><br />
+            <input type="submit" id="submit" value="ZAREJESTRUJ"></input>
+            <a href="logowanie.html" id="logowanie">Mam już konto</a>
+            <!--<button onclick="url(logowanie.html)">Mam już konto</button>-->
+          </form>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <table>
+        <tr>
+          <td><p class="autorzy"><a href="">Oliwia Smalcuga</a> & <a href="https://github.com/M4rth3" target="_blank">Martyna Ślizankiewicz</a></p></td>
+          <td><p id="zegar"></p></td>
+          <td><p class="pomoc"><a href="pomoc.php">Pomoc</a></p></td>
+        </tr>
+      </table>
+      
+      <script src="../skrypty/zegar.js"></script>
+      <script src="../skrypty/menu.js"></script>
+    </footer>
+  </body>
+</html>
